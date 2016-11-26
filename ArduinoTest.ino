@@ -1,12 +1,20 @@
 #include "Arduino.h"
 //The setup function is called once at startup of the sketch
+
+#define LED 13
+
 void setup()
 {
-// Add your initialization code here
+
+	pinMode(LED,OUTPUT);
+	// Add your initialization code here
 }
 
 // The loop function is called in an endless loop
 void loop()
 {
-//Add your repeated code here
+	digitalWrite(LED,HIGH);
+	delay(500);
+	digitalWrite(LED,LOW);
+	delay(500);
 }
